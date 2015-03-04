@@ -174,7 +174,7 @@ $font-tertiary: 'Montserrat', sans-serif;
 	}
 	.section-three-box-three {
 		@extend .section-three-box-one;
-		height: rem-calc(230);
+		height: rem-calc(232);
 		margin-top: rem-calc(15);
 		margin-bottom: rem-calc(15);
 		max-width: 100%;
@@ -189,11 +189,16 @@ $font-tertiary: 'Montserrat', sans-serif;
    &:hover {
    	opacity: 1;
    }
+   img {
+   	height: rem-calc(478);
+   	width: 100%;
+   }
 }
 
 .social-media {
 	.button {
 		margin-right: rem-calc(25);
+		//white-space: nowrap; Need to Work on this one
 		&:last-child {
 			float: left;
 		}
@@ -207,7 +212,12 @@ $font-tertiary: 'Montserrat', sans-serif;
 				margin-top: rem-calc(25);
 		}
 }
-
+@media #{$medium-only}{
+	.social-media .button {
+		margin-right: rem-calc(0);
+		margin-top: rem-calc(50);
+	}
+}
 @media #{$large-up}{
 	.social-media .button {
 		margin-top: rem-calc(50);
@@ -217,6 +227,8 @@ $font-tertiary: 'Montserrat', sans-serif;
 	}
 
 }
+
+/* Section Four */
 
 /* Footer */
 .banner {

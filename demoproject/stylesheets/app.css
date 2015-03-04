@@ -9348,7 +9348,7 @@ th.hide-for-touch {
 
   /* line 175, ../scss/_nav.scss */
   .section-three-box-three {
-    height: 14.375rem;
+    height: 14.5rem;
     margin-top: 0.9375rem;
     margin-bottom: 0.9375rem;
     max-width: 100%;
@@ -9365,67 +9365,80 @@ th.hide-for-touch {
 .section-three-image:hover {
   opacity: 1;
 }
+/* line 192, ../scss/_nav.scss */
+.section-three-image img {
+  height: 29.875rem;
+  width: 100%;
+}
 
-/* line 195, ../scss/_nav.scss */
+/* line 199, ../scss/_nav.scss */
 .social-media .button {
   margin-right: 1.5625rem;
 }
-/* line 197, ../scss/_nav.scss */
+/* line 202, ../scss/_nav.scss */
 .social-media .button:last-child {
   float: left;
 }
-/* line 201, ../scss/_nav.scss */
+/* line 206, ../scss/_nav.scss */
 .social-media .fa {
   padding-right: 0.625rem;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 206, ../scss/_nav.scss */
+  /* line 211, ../scss/_nav.scss */
   .social-media .button:first-child {
     margin-top: 1.5625rem;
   }
 }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 216, ../scss/_nav.scss */
+  .social-media .button {
+    margin-right: 0;
+    margin-top: 3.125rem;
+  }
+}
 @media only screen and (min-width: 64.063em) {
-  /* line 212, ../scss/_nav.scss */
+  /* line 222, ../scss/_nav.scss */
   .social-media .button {
     margin-top: 3.125rem;
   }
-  /* line 214, ../scss/_nav.scss */
+  /* line 224, ../scss/_nav.scss */
   .social-media .button:first-child {
     margin-top: 3.125rem;
   }
 }
+/* Section Four */
 /* Footer */
-/* line 222, ../scss/_nav.scss */
+/* line 234, ../scss/_nav.scss */
 .banner {
   background-color: #F4F0eb;
 }
 
-/* line 226, ../scss/_nav.scss */
+/* line 238, ../scss/_nav.scss */
 .footer {
   background-color: #426096;
   color: #ffffff;
 }
-/* line 229, ../scss/_nav.scss */
+/* line 241, ../scss/_nav.scss */
 .footer a {
   color: #ffffff;
 }
-/* line 231, ../scss/_nav.scss */
+/* line 243, ../scss/_nav.scss */
 .footer a::hover {
   color: #426096;
 }
-/* line 235, ../scss/_nav.scss */
+/* line 247, ../scss/_nav.scss */
 .footer h3 {
   font-family: Georgia, serif;
   font-size: 1.125rem;
   font-style: italic;
 }
-/* line 240, ../scss/_nav.scss */
+/* line 252, ../scss/_nav.scss */
 .footer p {
   font-family: "Lato", sans-serif;
   font-size: 0.9375rem;
 }
-/* line 243, ../scss/_nav.scss */
+/* line 255, ../scss/_nav.scss */
 .footer p a:hover {
   text-decoration: underline;
 }
