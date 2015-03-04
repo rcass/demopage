@@ -15,7 +15,7 @@ $font-tertiary: 'Montserrat', sans-serif;
 	background-color: $primary-color;
 	border: $primary-color 1px solid;
 	color: $white;
-	&:hover, &:active {
+	&:hover, &:active, &:focus {
 		background-color: $primary-color * 0.5 ;
 	}
 }
@@ -23,7 +23,7 @@ $font-tertiary: 'Montserrat', sans-serif;
 	@extend .prime;
 	background-color: $secondary-color;
 	border: $secondary-color 1px solid;
-	&:hover, &:active {
+	&:hover, &:active, &:focus {
 		background-color: $secondary-color * 0.5;
 	}
 }
@@ -32,7 +32,7 @@ $font-tertiary: 'Montserrat', sans-serif;
 	background-color: $white;
 	border: $primary-color 1px solid;
 	color: $primary-color;
-	&:hover, &:active {
+	&:hover, &:active, &:focus {
 		background-color: $primary-color;
 		color: $white;
 	}
@@ -229,12 +229,53 @@ $font-tertiary: 'Montserrat', sans-serif;
 }
 
 /* Section Four */
-
-/* Footer */
-.banner {
-	background-color: #F4F0eb;
+.section-four {
+	margin-top: rem-calc(100);
+	margin-bottom: rem-calc(100);
+	width: auto;
+	h3,p {
+		color: $secondary-color;
+	}
+	h3 {
+		font-family: $font-tertiary;
+		font-size: rem-calc(18);
+		text-transform: uppercase;
+		margin-bottom: rem-calc(30);
+	}
+	p {
+		font-family: $font-primary;
+		font-size: rem-calc(30);
+		margin-bottom: rem-calc(50);
+	}
+	.button {
+		font-family: $font-primary;
+	}
 }
 
+.banner {
+	background-color: #F4F0eb;
+	color: $secondary-color;
+	p {
+		font-size: rem-calc(34);
+		padding-top: rem-calc(20);
+		text-align: center;
+	}
+}
+
+@media #{$medium-up}{
+	.banner p {
+		text-align: left;
+	}
+}
+
+@media #{$large-up}{
+	.section-four {
+		margin-right: rem-calc(150);
+		margin-left: rem-calc(150);
+	}
+}
+
+/* Footer */
 .footer {
 	background-color: $primary-color;
 	color: $white;

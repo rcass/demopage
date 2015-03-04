@@ -9168,7 +9168,7 @@ th.hide-for-touch {
   color: #ffffff;
 }
 /* line 18, ../scss/_nav.scss */
-.prime:hover, .second:hover, .top-bar-section ul li > a.button:hover, .prime:active, .second:active, .top-bar-section ul li > a.button:active {
+.prime:hover, .second:hover, .top-bar-section ul li > a.button:hover, .prime:active, .second:active, .top-bar-section ul li > a.button:active, .prime:focus, .second:focus, .top-bar-section ul li > a.button:focus {
   background-color: #21304b;
 }
 
@@ -9178,7 +9178,7 @@ th.hide-for-touch {
   border: #7F6F5A 1px solid;
 }
 /* line 26, ../scss/_nav.scss */
-.second:hover, .second:active {
+.second:hover, .second:active, .second:focus {
   background-color: #3f372d;
 }
 
@@ -9189,7 +9189,7 @@ th.hide-for-touch {
   color: #426096;
 }
 /* line 35, ../scss/_nav.scss */
-.third:hover, .third:active {
+.third:hover, .third:active, .third:focus {
   background-color: #426096;
   color: #ffffff;
 }
@@ -9408,37 +9408,85 @@ th.hide-for-touch {
   }
 }
 /* Section Four */
-/* Footer */
-/* line 234, ../scss/_nav.scss */
-.banner {
-  background-color: #F4F0eb;
+/* line 232, ../scss/_nav.scss */
+.section-four {
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
+  width: auto;
+}
+/* line 236, ../scss/_nav.scss */
+.section-four h3, .section-four p {
+  color: #7F6F5A;
+}
+/* line 239, ../scss/_nav.scss */
+.section-four h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  margin-bottom: 1.875rem;
+}
+/* line 245, ../scss/_nav.scss */
+.section-four p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+/* line 250, ../scss/_nav.scss */
+.section-four .button {
+  font-family: "Lato", sans-serif;
 }
 
-/* line 238, ../scss/_nav.scss */
+/* line 255, ../scss/_nav.scss */
+.banner {
+  background-color: #F4F0eb;
+  color: #7F6F5A;
+}
+/* line 258, ../scss/_nav.scss */
+.banner p {
+  font-size: 2.125rem;
+  padding-top: 1.25rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 266, ../scss/_nav.scss */
+  .banner p {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 272, ../scss/_nav.scss */
+  .section-four {
+    margin-right: 9.375rem;
+    margin-left: 9.375rem;
+  }
+}
+/* Footer */
+/* line 279, ../scss/_nav.scss */
 .footer {
   background-color: #426096;
   color: #ffffff;
 }
-/* line 241, ../scss/_nav.scss */
+/* line 282, ../scss/_nav.scss */
 .footer a {
   color: #ffffff;
 }
-/* line 243, ../scss/_nav.scss */
+/* line 284, ../scss/_nav.scss */
 .footer a::hover {
   color: #426096;
 }
-/* line 247, ../scss/_nav.scss */
+/* line 288, ../scss/_nav.scss */
 .footer h3 {
   font-family: Georgia, serif;
   font-size: 1.125rem;
   font-style: italic;
 }
-/* line 252, ../scss/_nav.scss */
+/* line 293, ../scss/_nav.scss */
 .footer p {
   font-family: "Lato", sans-serif;
   font-size: 0.9375rem;
 }
-/* line 255, ../scss/_nav.scss */
+/* line 296, ../scss/_nav.scss */
 .footer p a:hover {
   text-decoration: underline;
 }
