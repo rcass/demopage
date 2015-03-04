@@ -15,7 +15,7 @@ $font-tertiary: 'Montserrat', sans-serif;
 	background-color: $primary-color;
 	border: $primary-color 1px solid;
 	color: $white;
-	&:hover {
+	&:hover, &:active {
 		background-color: $primary-color * 0.5 ;
 	}
 }
@@ -23,7 +23,7 @@ $font-tertiary: 'Montserrat', sans-serif;
 	@extend .prime;
 	background-color: $secondary-color;
 	border: $secondary-color 1px solid;
-	&:hover {
+	&:hover, &:active {
 		background-color: $secondary-color * 0.5;
 	}
 }
@@ -32,7 +32,7 @@ $font-tertiary: 'Montserrat', sans-serif;
 	background-color: $white;
 	border: $primary-color 1px solid;
 	color: $primary-color;
-	&:hover {
+	&:hover, &:active {
 		background-color: $primary-color;
 		color: $white;
 	}
@@ -161,7 +161,7 @@ $font-tertiary: 'Montserrat', sans-serif;
 	.section-three-box-one {
 		@include sectionthree_fonts;
 		border: solid 2px #ded2c1;
-		height: rem-calc(231);
+		height: rem-calc(230);
 		&:hover {
 			background-color: $primary-color;
 		}
@@ -174,7 +174,7 @@ $font-tertiary: 'Montserrat', sans-serif;
 	}
 	.section-three-box-three {
 		@extend .section-three-box-one;
-		height: rem-calc(245);
+		height: rem-calc(230);
 		margin-top: rem-calc(15);
 		margin-bottom: rem-calc(15);
 		max-width: 100%;
@@ -189,6 +189,33 @@ $font-tertiary: 'Montserrat', sans-serif;
    &:hover {
    	opacity: 1;
    }
+}
+
+.social-media {
+	.button {
+		margin-right: rem-calc(25);
+		&:last-child {
+			float: left;
+		}
+	}
+	.fa {
+		padding-right: rem-calc(10);
+	}
+}
+@media #{$small-only}{
+		.social-media .button:first-child {
+				margin-top: rem-calc(25);
+		}
+}
+
+@media #{$large-up}{
+	.social-media .button {
+		margin-top: rem-calc(50);
+		&:first-child {
+			margin-top: rem-calc(50);
+		}
+	}
+
 }
 
 /* Footer */
