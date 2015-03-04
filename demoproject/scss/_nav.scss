@@ -256,7 +256,9 @@ $font-tertiary: 'Montserrat', sans-serif;
 	background-color: #F4F0eb;
 	color: $secondary-color;
 	p {
+		font-family: $font-primary;
 		font-size: rem-calc(34);
+		font-style: italic;
 		padding-top: rem-calc(20);
 		text-align: center;
 	}
@@ -279,11 +281,23 @@ $font-tertiary: 'Montserrat', sans-serif;
 .footer {
 	background-color: $primary-color;
 	color: $white;
+	padding-top: rem-calc(80);
+	padding-bottom: rem-calc(20);
+	img {
+		padding-bottom: rem-calc(50);
+	}
 	a {
 		color: $white;
 		&::hover {
 			color: $primary-color;
 		}
+	}
+	.footer-links {
+		margin-bottom: rem-calc(80);
+		text-align: center;
+	}
+	.footer-copyright {
+		text-align: center;
 	}
 	h3 {
 		font-family: Georgia, serif;
@@ -294,8 +308,27 @@ $font-tertiary: 'Montserrat', sans-serif;
 		font-family: $font-primary;
 		font-size: rem-calc(15);
 		a:hover {
-			text-decoration: underline;
+			border-bottom: 1px solid white;
+			padding-bottom: rem-calc(5);
 		}
+	}
+	.copyright {
+		margin-right: rem-calc(25);
+		font-family: $font-primary;
+		font-size: rem-calc(14);
+	}
+	.copyright-link {
+		font-family: $font-tertiary;
+		font-size: rem-calc(12);
+		margin-right: rem-calc(5);
+		margin-left: rem-calc(5);
 	}
 }
 
+@media #{$large-up}{
+	.footer {
+		.footer-links, .footer-copyright {
+			text-align: left;
+		}
+	}
+}

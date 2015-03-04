@@ -9443,50 +9443,88 @@ th.hide-for-touch {
 }
 /* line 258, ../scss/_nav.scss */
 .banner p {
+  font-family: "Lato", sans-serif;
   font-size: 2.125rem;
+  font-style: italic;
   padding-top: 1.25rem;
   text-align: center;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 266, ../scss/_nav.scss */
+  /* line 268, ../scss/_nav.scss */
   .banner p {
     text-align: left;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 272, ../scss/_nav.scss */
+  /* line 274, ../scss/_nav.scss */
   .section-four {
     margin-right: 9.375rem;
     margin-left: 9.375rem;
   }
 }
 /* Footer */
-/* line 279, ../scss/_nav.scss */
+/* line 281, ../scss/_nav.scss */
 .footer {
   background-color: #426096;
   color: #ffffff;
+  padding-top: 5rem;
+  padding-bottom: 1.25rem;
 }
-/* line 282, ../scss/_nav.scss */
+/* line 286, ../scss/_nav.scss */
+.footer img {
+  padding-bottom: 3.125rem;
+}
+/* line 289, ../scss/_nav.scss */
 .footer a {
   color: #ffffff;
 }
-/* line 284, ../scss/_nav.scss */
+/* line 291, ../scss/_nav.scss */
 .footer a::hover {
   color: #426096;
 }
-/* line 288, ../scss/_nav.scss */
+/* line 295, ../scss/_nav.scss */
+.footer .footer-links {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+/* line 299, ../scss/_nav.scss */
+.footer .footer-copyright {
+  text-align: center;
+}
+/* line 302, ../scss/_nav.scss */
 .footer h3 {
   font-family: Georgia, serif;
   font-size: 1.125rem;
   font-style: italic;
 }
-/* line 293, ../scss/_nav.scss */
+/* line 307, ../scss/_nav.scss */
 .footer p {
   font-family: "Lato", sans-serif;
   font-size: 0.9375rem;
 }
-/* line 296, ../scss/_nav.scss */
+/* line 310, ../scss/_nav.scss */
 .footer p a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.3125rem;
+}
+/* line 315, ../scss/_nav.scss */
+.footer .copyright {
+  margin-right: 1.5625rem;
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem;
+}
+/* line 320, ../scss/_nav.scss */
+.footer .copyright-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  margin-right: 0.3125rem;
+  margin-left: 0.3125rem;
+}
+
+@media only screen and (min-width: 64.063em) {
+  /* line 330, ../scss/_nav.scss */
+  .footer .footer-links, .footer .footer-copyright {
+    text-align: left;
+  }
 }
