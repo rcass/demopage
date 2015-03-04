@@ -161,7 +161,6 @@ $font-tertiary: 'Montserrat', sans-serif;
 	.section-three-box-one {
 		@include sectionthree_fonts;
 		border: solid 2px #ded2c1;
-		color: $primary-color;
 		height: rem-calc(231);
 		&:hover {
 			background-color: $primary-color;
@@ -169,14 +168,12 @@ $font-tertiary: 'Montserrat', sans-serif;
 	}
 	.section-three-box-two {
 		@extend .section-three-box-one;
-		@include sectionthree_fonts;
 		margin-left: rem-calc(15);
-		max-width: 47.5%;
+		max-width: 45.9%;
 		float: right;
 	}
 	.section-three-box-three {
 		@extend .section-three-box-one;
-		@include sectionthree_fonts;
 		height: rem-calc(245);
 		margin-top: rem-calc(15);
 		margin-bottom: rem-calc(15);
@@ -184,8 +181,15 @@ $font-tertiary: 'Montserrat', sans-serif;
 	}
 }
 
-
-
+.section-three-image {
+	opacity: 0.75;
+   transition: opacity .55s ease-in-out;
+   -moz-transition: opacity .55s ease-in-out;
+   -webkit-transition: opacity .55s ease-in-out;
+   &:hover {
+   	opacity: 1;
+   }
+}
 
 /* Footer */
 .banner {
