@@ -9203,30 +9203,30 @@ th.hide-for-touch {
 }
 
 /* Banner Image */
-/* line 51, ../scss/_nav.scss */
+/* line 52, ../scss/_nav.scss */
 .fullimage {
   background-image: url(../imgs/banner_placeholder.png);
   height: 38.9375rem;
   max-width: 100%;
 }
-/* line 55, ../scss/_nav.scss */
+/* line 56, ../scss/_nav.scss */
 .fullimage .fullimage-content {
   top: 8.625rem;
 }
-/* line 58, ../scss/_nav.scss */
+/* line 59, ../scss/_nav.scss */
 .fullimage h3, .fullimage p {
   color: #ffffff;
   font-family: "Lato", sans-serif;
 }
-/* line 62, ../scss/_nav.scss */
+/* line 63, ../scss/_nav.scss */
 .fullimage h3 {
   font-size: 2.75rem;
 }
-/* line 65, ../scss/_nav.scss */
+/* line 66, ../scss/_nav.scss */
 .fullimage p {
   font-size: 1.875rem;
 }
-/* line 68, ../scss/_nav.scss */
+/* line 69, ../scss/_nav.scss */
 .fullimage button {
   font-size: 1.0625rem;
 }
@@ -9236,64 +9236,174 @@ th.hide-for-touch {
 .section-one-content p {
   color: #7F6F5A;
   font-size: 1.875rem;
+  margin-bottom: 3.625rem;
+}
+
+/* line 80, ../scss/_nav.scss */
+.section-one {
+  margin-top: 4.375rem;
+  margin-bottom: 6.25rem;
+}
+/* line 83, ../scss/_nav.scss */
+.section-one img {
+  margin-left: 1.5rem;
+}
+/* line 86, ../scss/_nav.scss */
+.section-one .large-3:last-child {
+  float: left;
 }
 
 /* Section Two */
-/* line 81, ../scss/_nav.scss */
+/* line 92, ../scss/_nav.scss */
 .section-two-headline, .section-three-headline {
   color: #7F6F5A;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
+  margin-bottom: 4.625rem;
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 88, ../scss/_nav.scss */
+/* line 101, ../scss/_nav.scss */
+.section-two-list hr {
+  border-color: #e0d5c5;
+}
+/* line 104, ../scss/_nav.scss */
+.section-two-list .test {
+  background-color: magenta;
+  transition: background-color 300ms ease-out;
+}
+/* line 107, ../scss/_nav.scss */
+.section-two-list .test:hover {
+  background-color: blue !important;
+}
+/* line 111, ../scss/_nav.scss */
 .section-two-list li {
   list-style-type: none;
 }
-/* line 90, ../scss/_nav.scss */
+/* line 116, ../scss/_nav.scss */
 .section-two-list li:hover {
   background-color: #F4F0eb;
 }
-
-/* Section Three */
-/* line 100, ../scss/_nav.scss */
-.section-three-box {
-  border: solid 1px #7F6F5A;
+/* line 119, ../scss/_nav.scss */
+.section-two-list li img {
+  margin-left: 1.5rem;
+  margin-bottom: 2.25rem;
+}
+/* line 123, ../scss/_nav.scss */
+.section-two-list li h5 {
+  color: #304977;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5625rem;
+  padding-top: 0;
+}
+/* line 129, ../scss/_nav.scss */
+.section-two-list li p {
+  color: #222222;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+/* line 134, ../scss/_nav.scss */
+.section-two-list li .button {
+  margin-top: 1.8125rem;
 }
 
+/* line 139, ../scss/_nav.scss */
+.li-text {
+  margin-top: 1.5625rem;
+}
+
+/* Section Three */
+/* line 156, ../scss/_nav.scss */
+.section-three-headline {
+  margin-top: 3.75rem;
+}
+
+@media only screen {
+  /* line 161, ../scss/_nav.scss */
+  .section-three-box-one, .section-three-box-two, .section-three-box-three {
+    color: #304977;
+    font-family: "Lato", sans-serif;
+    font-size: 1.625rem;
+    line-height: 2;
+    padding-top: 0.9375rem;
+    border: solid 2px #ded2c1;
+    color: #426096;
+    height: 14.4375rem;
+  }
+  /* line 151, ../scss/_nav.scss */
+  .section-three-box-one:hover, .section-three-box-two:hover, .section-three-box-three:hover {
+    color: white;
+  }
+  /* line 166, ../scss/_nav.scss */
+  .section-three-box-one:hover, .section-three-box-two:hover, .section-three-box-three:hover {
+    background-color: #426096;
+  }
+
+  /* line 170, ../scss/_nav.scss */
+  .section-three-box-two {
+    color: #304977;
+    font-family: "Lato", sans-serif;
+    font-size: 1.625rem;
+    line-height: 2;
+    padding-top: 0.9375rem;
+    margin-left: 0.9375rem;
+    max-width: 47.5%;
+    float: right;
+  }
+  /* line 151, ../scss/_nav.scss */
+  .section-three-box-two:hover {
+    color: white;
+  }
+
+  /* line 177, ../scss/_nav.scss */
+  .section-three-box-three {
+    color: #304977;
+    font-family: "Lato", sans-serif;
+    font-size: 1.625rem;
+    line-height: 2;
+    padding-top: 0.9375rem;
+    height: 15.3125rem;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    max-width: 100%;
+  }
+  /* line 151, ../scss/_nav.scss */
+  .section-three-box-three:hover {
+    color: white;
+  }
+}
 /* Footer */
-/* line 107, ../scss/_nav.scss */
+/* line 191, ../scss/_nav.scss */
 .banner {
   background-color: #F4F0eb;
 }
 
-/* line 111, ../scss/_nav.scss */
+/* line 195, ../scss/_nav.scss */
 .footer {
   background-color: #426096;
   color: #ffffff;
 }
-/* line 114, ../scss/_nav.scss */
+/* line 198, ../scss/_nav.scss */
 .footer a {
   color: #ffffff;
 }
-/* line 116, ../scss/_nav.scss */
+/* line 200, ../scss/_nav.scss */
 .footer a::hover {
   color: #426096;
 }
-/* line 120, ../scss/_nav.scss */
+/* line 204, ../scss/_nav.scss */
 .footer h3 {
   font-family: Georgia, serif;
   font-size: 1.125rem;
   font-style: italic;
 }
-/* line 125, ../scss/_nav.scss */
+/* line 209, ../scss/_nav.scss */
 .footer p {
   font-family: "Lato", sans-serif;
   font-size: 0.9375rem;
 }
-/* line 128, ../scss/_nav.scss */
+/* line 212, ../scss/_nav.scss */
 .footer p a:hover {
   text-decoration: underline;
 }

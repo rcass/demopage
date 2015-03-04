@@ -47,6 +47,7 @@ $font-tertiary: 'Montserrat', sans-serif;
 	top: rem-calc(18);
 }
 
+
 /* Banner Image */
 .fullimage {
 	background-image: url(../imgs/banner_placeholder.png);
@@ -68,13 +69,23 @@ $font-tertiary: 'Montserrat', sans-serif;
 	button {
 		font-size: rem-calc(17);
 	}
-
 }
 
 /* Section One */
 .section-one-content p {
 		color: $secondary-color;
 		font-size: rem-calc(30);
+		margin-bottom: rem-calc(58);
+}
+.section-one {
+	margin-top: rem-calc(70);
+	margin-bottom: rem-calc(100);
+	img {
+		margin-left: rem-calc(24);
+	}
+	.large-3:last-child {
+		float: left;
+	}
 }
 
 /* Section Two */
@@ -82,25 +93,98 @@ $font-tertiary: 'Montserrat', sans-serif;
 	color: $secondary-color;
 	font-family: $font-tertiary;
 	font-size: rem-calc(18);
+	margin-bottom: rem-calc(74);
 	text-align: center;
 	text-transform: uppercase;
 }
-.section-two-list li {
-	list-style-type: none;
+	.section-two-list {	
+		hr {
+			border-color: #e0d5c5;
+		}
+		.test {
+			background-color: magenta;
+			transition: background-color 300ms ease-out;
+			&:hover {
+				background-color: blue !important;
+			}
+		}
+		li { 
+			list-style-type: none;
+
+			
+
+			&:hover {
+				background-color: #F4F0eb;
+			}
+			img {
+				margin-left: rem-calc(24);
+				margin-bottom: rem-calc(36);
+			}
+			h5 {
+				color: #304977;
+				font-family: $font-primary;
+				font-size: rem-calc(25);
+				padding-top: rem-calc(0);
+			}
+			p {
+				color: #222222;
+				font-family: $font-primary;
+				font-size: rem-calc(24);
+			}
+			.button {
+				margin-top: rem-calc(29);
+			}
+		}
+	}
+.li-text  {
+	margin-top: rem-calc(25);
+}
+
+
+/* Section Three */
+@mixin sectionthree_fonts {
+	color: #304977;
+	font-family: $font-primary;
+	font-size: rem-calc(26);
+	line-height: 2;
+	padding-top: rem-calc(15);
 	&:hover {
-		background-color: #F4F0eb;
+		color: white;
 	}
 }
 
-/* Section Three */
 .section-three-headline {
-	@extend .section-two-headline
+	@extend .section-two-headline;
+	margin-top: rem-calc(60);
+}
+@media #{$small-up} { 
+	.section-three-box-one {
+		@include sectionthree_fonts;
+		border: solid 2px #ded2c1;
+		color: $primary-color;
+		height: rem-calc(231);
+		&:hover {
+			background-color: $primary-color;
+		}
+	}
+	.section-three-box-two {
+		@extend .section-three-box-one;
+		@include sectionthree_fonts;
+		margin-left: rem-calc(15);
+		max-width: 47.5%;
+		float: right;
+	}
+	.section-three-box-three {
+		@extend .section-three-box-one;
+		@include sectionthree_fonts;
+		height: rem-calc(245);
+		margin-top: rem-calc(15);
+		margin-bottom: rem-calc(15);
+		max-width: 100%;
+	}
 }
 
-.section-three-box {
-	border: solid 1px $secondary-color;
 
-}
 
 
 /* Footer */

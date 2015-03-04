@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
@@ -53,21 +54,23 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="large-4 medium-4 columns">
-        <a href="http://foundation.zurb.com/docs"><img src="http://placehold.it/150x150"></a>
+    <div class="section-one">
+      <div class="row">
+        <div class="large-3 medium-3 columns">
+          <a href="#"><img src="imgs/sectionone_logo.png"></a>
+        </div>
+        <div class="large-9 medium-9 columns section-one-content">
+          <p>Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus; Esse enim, nisi eris, non potes. Hoc enim constituto in philosophia constituta sunt omnia. Sed virtutem ipsam inchoavit, nihil amplius. Hoc etsi multimodis reprehendi potest.</p>
+        </div>
       </div>
-      <div class="large-8 medium-8 columns section-one-content">
-        <p>Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus; Esse enim, nisi eris, non potes. Hoc enim constituto in philosophia constituta sunt omnia. Sed virtutem ipsam inchoavit, nihil amplius. Hoc etsi multimodis reprehendi potest.</p>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="large-4 large-offset-4 columns">
-        <p><a href="#" class="medium-12 columns button prime">Lorem ipsum dolor</a><br/></p>
-      </div>
-      <div class="large-4 columns">
-        <p><a href="#" class="medium-12 columns button second">Lorem ipsum dolor</a><br/></p>
+      <div class="row">
+        <div class="large-3 large-offset-3 columns">
+          <p><a href="#" class="medium-12 columns button second">Lorem ipsum dolor</a><br/></p>
+        </div>
+        <div class="large-3 columns">
+          <p><a href="#" class="medium-12 columns button prime">Lorem ipsum dolor</a><br/></p>
+        </div>
       </div>
     </div>
   <!-- SECTION ONE END -->
@@ -78,39 +81,39 @@
         <h2 class="section-two-headline">Morbi sit amet ultricies lacus</h2>
         <ul class="section-two-list">
           <li>
-            <a href="#" class="large-2 columns">logo</a>
+            <a href="#" class="show-for-medium-up large-3 columns"><img src="imgs/sectionthree_logo.png" alt="logo" /></a>
             <div class="large-6 columns li-text">
               <h5>Sed luctus</h5>
               <p>Suspendisse feugiate</p>
             </div>
-            <a href="#" class="large-3 columns button prime"><i class="icon-phone"></i>600 000-1111</a>
+            <a href="#" class="large-3 columns button second"><i class="fa fa-phone"></i> 600 000-1111</a>
           </li>
           <hr />
           <li>
-            <a href="#" class="large-2 columns">logo</a>
+            <a href="#" class="show-for-medium-up large-3 columns"><img src="imgs/sectionthree_logo.png" alt="logo" /></a>
             <div class="large-6 columns li-text">
               <h5>Sed luctus</h5>
               <p>Suspendisse feugiate</p>
             </div>
-            <a href="#" class="large-3 columns button prime"><i class="icon-phone"></i>600 000-1111</a>
+            <a href="#" class="large-3 columns button second"><i class="fa fa-phone"></i> 600 000-1111</a>
           </li>
           <hr />
           <li>
-            <a href="#" class="large-2 columns">logo</a>
+            <a href="#" class="show-for-medium-up large-3 columns"><img src="imgs/sectionthree_logo.png" alt="logo" /></a>
             <div class="large-6 columns li-text">
               <h5>Sed luctus</h5>
               <p>Suspendisse feugiate</p>
             </div>
-            <a href="#" class="large-3 columns button prime"><i class="icon-phone"></i>600 000-1111</a>
+            <a href="#" class="large-3 columns button second"><i class="fa fa-phone"></i> 600 000-1111</a>
           </li>
           <hr />
           <li>
-            <a href="#" class="large-2 columns">logo</a>
+            <a href="#" class="show-for-medium-up large-3 columns"><img src="imgs/sectionthree_logo.png" alt="logo" /></a>
             <div class="large-6 columns li-text">
               <h5>Sed luctus</h5>
               <p>Suspendisse feugiate</p>
             </div>
-            <a href="#" class="large-3 columns button prime"><i class="icon-phone"></i>600 000-1111</a>
+            <a href="#" class="large-3 columns button second"><i class="fa fa-phone"></i> 600 000-1111</a>
           </li>
         <ul>
       </div>     
@@ -121,24 +124,35 @@
   <!-- SECTION THREE START -->
     <div class="row">
       <h2 class="section-three-headline">Pellentesque habitant morbi tristique</h2>
-      <div class="large-5 medium-12 columns">
-        <div class="row">
-          <div class="large-6 columns section-three-box">A sentence goes here.</div>
-          <div class="large-6 columns section-three-box">Another sentence will be here too.</div>
+      <div class="medium-12 large-5 columns">
+        <div class="small-12 columns">
+          <div class="row">
+            <a href="#" alt="">
+              <div class="small-6 columns section-three-box-one">
+                
+                  A sentence goes here.
+                
+              </div>
+            </a>
+            <div class="small-6 columns section-three-box-two">Another sentence will be here too.</div>
+          </div>
+          <div class="row">
+            <div class="small-12 large-12 columns section-three-box-three">And look, a third sentence right here.</div>
+          </div>
         </div>
-        <div class="row">
-          <div class="large-12 columns section-three-box">And look, a third sentence right here.</div>
-        </div>
+
       </div>
       <div class="large-7 medium-12 columns section-three-image">
         <a href="http://foundation.zurb.com/docs"><img src="imgs/IMG_0025.jpg"></a>
       </div>
     </div>
 
-    <div class="row social-media">
-      <a href="#" class="medium-3 columns button second">Praesent ultricles</a>
-      <a href="#" class="medium-3 columns button third"><i class="fa fa-facebook"></i>Join us on Facebook</a>
-      <a href="#" class="medium-3 columns button third">Follow us on Twitter</a>
+    <div class="small-12 columns">
+      <div class="row social-media">
+        <a href="#" class="medium-3 columns button second">Praesent ultricles</a>
+        <a href="#" class="medium-3 columns button third"><i class="fa fa-facebook"></i>Join us on Facebook</a>
+        <a href="#" class="medium-3 columns button third">Follow us on Twitter</a>
+      </div>
     </div>
 
     <div class="row">
