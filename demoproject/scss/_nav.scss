@@ -1,11 +1,11 @@
-/* Global Settings */
-/* Colors */
+// Global Settings //
+// Colors //
 $primary-color: #426096;
-$secondary-color: #7F6F5A;
-$tertiary-color: #F4F0eb;
-$white: #ffffff;
+$secondary-color: #7f6f5a;
+$tertiary-color: #f4f0eb;
+$white: #fff;
 
-/* Fonts */
+// Fonts //
 $font-primary: 'Lato', sans-serif;
 $font-secondary: 'Muli', sans-serif;
 $font-tertiary: 'Montserrat', sans-serif;
@@ -14,395 +14,456 @@ $light: 300;
 $regular: 400;
 $bold: 700;
 
-/* Buttons */
+// Buttons //
 .prime {
-	background-color: $primary-color;
-	border: $primary-color 1px solid;
-	color: $white;
-	font-family: $font-primary;
-	&:hover, &:active, &:focus {
-		background-color: $primary-color * 0.5 ;
+  background-color: $primary-color;
+  border: $primary-color 1px solid;
+  color: $white;
+  font-family: $font-primary;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $primary-color * .5;
 	}
 }
+
 .second {
-	@extend .prime;
-	background-color: $secondary-color;
-	border: $secondary-color 1px solid;
-	&:hover, &:active, &:focus {
-		background-color: $secondary-color * 0.5;
+  @extend .prime;
+  background-color: $secondary-color;
+  border: $secondary-color 1px solid;
+
+  &:hover, 
+  &:active, 
+  &:focus {
+    background-color: $secondary-color * .5;
 	}
 }
 
 .third {
-	background-color: $white;
-	border: $primary-color 1px solid;
-	color: $primary-color;
-	&:hover, &:active, &:focus {
-		background-color: $primary-color;
-		color: $white;
+  background-color: $white;
+  border: $primary-color 1px solid;
+  color: $primary-color;
+  
+  &:hover, 
+  &:active,
+  &:focus {
+    background-color: $primary-color;
+    color: $white;
 	}
 }
 
 
-/* Nav Bar */
+// Nav Bar //
 .top-bar-section ul li > a.button {
-	@extend .prime;
-	height: rem-calc(50);
-	padding-top: rem-calc(12);
+  @extend .prime;
+  height: rem-calc(50);
+  padding-top: rem-calc(12);
 }
+
 .top-bar-section .has-form {
-	padding: rem-calc(0);
+  padding: rem-calc(0);
 }
+
 @media #{$medium-up}{
-	.top-bar-section ul li > a.button {
-		top: rem-calc(18);	
+  .top-bar-section ul li > a.button {
+    top: rem-calc(18);	
 	}
-	.top-bar-section .has-form {
-		padding-left: rem-calc(26);
-		padding-right: rem-calc(26);
+
+  .top-bar-section .has-form {
+    padding-left: rem-calc(26);
+    padding-right: rem-calc(26);
 	}
 }
 
 
-/* Banner Image */
+// Banner Image //
 .fullimage {
-	background: 
-    /* top, transparent red, faked with gradient */ 
+  background: 
     linear-gradient(
-      rgba(17, 0, 0, 0.3), 
-      rgba(17, 0, 0, 0.3)
+      rgba(17, 0, 0, .3),
+      rgba(17, 0, 0, .3)
     ),
-    /* bottom, image */
-    url(../imgs/IMG_9985.jpg);
-	height: rem-calc(623);
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-color: $tertiary-color;
-	.fullimage-content {
-		top: rem-calc(60);
-	}
-	h3, p {
-		color: $white;
-		font-family: $font-primary;
-	}
-	h3 {
-		font-size: rem-calc(44);
-		font-style: italic;
-		font-weight: $regular;
-		padding-bottom: rem-calc(15);
-		padding-left: rem-calc(20);
-	}
-	p {
-		line-height: 1.8;
-		font-size: rem-calc(30);
-		font-weight: $light;
-		padding-bottom: rem-calc(15);
-	}
-	.button {
-		font-family: $font-primary;
-		font-size: rem-calc(17);
+    url('../imgs/IMG_9985.jpg');
+  background-color: $tertiary-color;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: rem-calc(623);
+  
+  .fullimage-content {
+    top: rem-calc(60);
+  }
+	
+  h3,
+  p {
+    color: $white;
+    font-family: $font-primary;
+  }
+
+  h3 {
+    font-size: rem-calc(44);
+    font-style: italic;
+    font-weight: $regular;
+    padding-bottom: rem-calc(15);
+    padding-left: rem-calc(20);
+  }
+
+  p {
+    font-size: rem-calc(30);
+    font-weight: $light;
+    line-height: 1.8;
+    padding-bottom: rem-calc(15);
+  }
+
+  .button {
+    font-family: $font-primary;
+    font-size: rem-calc(17);
 	}
 }
+
 @media #{$medium-only} {
-	.fullimage .fullimage-content {
-		top: rem-calc(100);
-	}
+  .fullimage .fullimage-content {
+    top: rem-calc(100);
+  }
 }
+
 @media #{$large-up} {
-	.fullimage .fullimage-content {
-		top: rem-calc(138);
-		h3 {
-			padding-left: rem-calc(50);
-		} 
-	}
+  .fullimage .fullimage-content {
+    top: rem-calc(138);
+    
+    h3 {
+      padding-left: rem-calc(50);
+    } 
+  }
 }
 
-/* Section One */
+// Section One //
 .section-one-content p {
-		color: $secondary-color;
-		font-size: rem-calc(30);
-		font-weight: $light;
-		line-height: 2;
-		margin-bottom: rem-calc(58);
-}
-.section-one {
-	margin-top: rem-calc(70);
-	margin-bottom: rem-calc(100);
-	img {
-		margin-left: rem-calc(24);
-	}
-	.large-3:last-child {
-		float: left;
-	}
+  color: $secondary-color;
+  font-size: rem-calc(30);
+  font-weight: $light;
+  line-height: 2;
+  margin-bottom: rem-calc(58);
 }
 
-/* Section Two */
+.section-one {
+  margin-bottom: rem-calc(100);
+  margin-top: rem-calc(70);
+  
+  img {
+    margin-left: rem-calc(24);
+  }
+
+  .large-3:last-child {
+    float: left;
+  }
+}
+
+// Section Two //
 .section-two-headline {
-	color: $secondary-color;
-	font-family: $font-tertiary;
-	font-size: rem-calc(18);
-	margin-bottom: rem-calc(74);
-	position: relative;
-	text-align: center;
-	text-transform: uppercase;
+  color: $secondary-color;
+  font-family: $font-tertiary;
+  font-size: rem-calc(18);
+  margin-bottom: rem-calc(74);
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
   z-index: 1;
+
   &:before {
     border-top: 1px solid #e0d5c5;
-    content:"";
+    content: "";
     margin: 0 auto; 
     position: absolute;
     top: 40%; left: 0; right: 0; bottom: 0;
     width: 95%;
     z-index: -1;
-    }
-	span { 
+  }
+
+  span { 
     background: $white; 
     padding: 0 15px; 
    }
 }
+
 .section-two-list {	
-	hr {
-		border-color: #e0d5c5;
-	}
-	li { 
-		a {
-		//	background-color: pink;
-			&:hover {
-			background-color: #F4F0eb;
-			}
+  hr {
+    border-color: #e0d5c5;
+  }
+	
+  li { 
+    a:hover {
+      background-color: #f4f0eb;  
+    }
+
+    list-style-type: none;
+    
+    &:hover {
+      background-color: #f4f0eb;
+    }
+    
+    img {
+      margin-bottom: rem-calc(36);
+      margin-left: rem-calc(24);
+    }
+    
+    h5 {
+      color: #304977;
+      font-family: $font-primary;
+      font-size: rem-calc(30);
+      font-weight: $light;
+      padding-top: rem-calc(0);
 		}
-		list-style-type: none;
-		&:hover {
-			background-color: #F4F0eb;
-		}
-		img {
-			margin-left: rem-calc(24);
-			margin-bottom: rem-calc(36);
-		}
-		h5 {
-			color: #304977;
-			font-family: $font-primary;
-			font-size: rem-calc(30);
-			font-weight: $light;
-			padding-top: rem-calc(0);
-		}
-		p {
-			color: #222222;
-			font-family: $font-primary;
-			font-size: rem-calc(24);
-		}
-		.button {
-			font-size: rem-calc(16);
-			margin-top: rem-calc(29);
+		
+    p {
+      color: #222222;
+      font-family: $font-primary;
+      font-size: rem-calc(24);
+    }
+		
+    .button {
+      font-size: rem-calc(16);
+      margin-top: rem-calc(29);
 		}
 	}
 }
-.li-text  {
-	padding-top: rem-calc(25);
-	padding-top: rem-calc(15);
+
+.li-text {
+  padding-top: rem-calc(15);
 }
+
 .fa-phone {
-	margin-right: rem-calc(10);
+  margin-right: rem-calc(10);
 }
 
 @media #{$small-only}{
-	.section-two-list {
-		margin-left: rem-calc(0);
-	}
+  .section-two-list {
+    margin-left: rem-calc(0);
+  }
 }
 
-/* Section Three */
-@mixin sectionthree_fonts {
-	color: #304977;
-	font-family: $font-primary;
-	font-size: rem-calc(26);
-	font-weight: $light;
-	line-height: 2;
-	padding-top: rem-calc(15);
-	&:hover {
-		color: white;
-	}
+// Section Three //
+@mixin sectionthreefonts {
+  color: #304977;
+  font-family: $font-primary;
+  font-size: rem-calc(26);
+  font-weight: $light;
+  line-height: 2;
+  padding-top: rem-calc(15);
+  
+  &:hover {
+    color: $white;
+  }
 }
 
 .section-three-headline {
-	@extend .section-two-headline;
-	margin-top: rem-calc(60);
+  @extend .section-two-headline;
+  margin-top: rem-calc(60);
 }
+
 @media #{$small-up} { 
-	.section-three-box-one {
-		@include sectionthree_fonts;
-		border: solid 2px #ded2c1;
-		height: rem-calc(230);
-		&:hover {
-			background-color: $primary-color;
-		}
-	}
-	.section-three-box-two {
-		@extend .section-three-box-one;
-		margin-left: rem-calc(15);
-		max-width: 45.9%;
-		float: right;
-	}
-	.section-three-box-three {
-		@extend .section-three-box-one;
-		height: rem-calc(232);
-		margin-top: rem-calc(15);
-		margin-bottom: rem-calc(15);
-		max-width: 100%;
-	}
+  .section-three-box-one {
+    @include sectionthreefonts;
+    border: solid 2px #ded2c1;
+    height: rem-calc(230);
+   
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+
+  .section-three-box-two {
+    @extend .section-three-box-one;
+    float: right;
+    margin-left: rem-calc(15);
+    max-width: 45.9%;
+  }
+
+  .section-three-box-three {
+    @extend .section-three-box-one;
+    height: rem-calc(232);
+    margin-bottom: rem-calc(15);
+    margin-top: rem-calc(15);
+    max-width: 100%;
+  }
 }
 
 .section-three-image {
-	opacity: 0.75;
-   transition: opacity .55s ease-in-out;
-   -moz-transition: opacity .55s ease-in-out;
-   -webkit-transition: opacity .55s ease-in-out;
-   &:hover {
-   	opacity: 1;
-   }
-   img {
-   	height: rem-calc(478);
-   	width: 100%;
-   }
+  opacity: .75;
+  //-moz-transition: opacity .55s ease-in-out;
+  //-webkit-transition: opacity .55s ease-in-out;
+  transition: opacity .55s ease-in-out;
+  
+  &:hover {
+    opacity: 1;
+  }
+
+  img {
+    height: rem-calc(478);
+    width: 100%;
+  }
 }
 
 .social-media {
-	.button {
-		font-size: rem-calc(16);
-		margin-right: rem-calc(25);
-		//white-space: nowrap; Need to Work on this one
-		&:last-child {
-			float: left;
-		}
-	}
-	.fa {
-		padding-right: rem-calc(10);
-	}
+  .button {
+    font-size: rem-calc(16);
+    margin-right: rem-calc(25);
+    //white-space: nowrap; Need to Work on this one
+    
+    &:last-child {
+      float: left;
+    }    
+  }
+
+  .fa {
+    padding-right: rem-calc(10);
+  }
 }
+
 @media #{$small-only}{
-		.social-media .button:first-child {
-				margin-top: rem-calc(25);
-		}
+  .social-media .button:first-child {
+    margin-top: rem-calc(25);
+  }
 }
+
 @media #{$medium-only}{
-	.social-media .button {
-		margin-right: rem-calc(0);
-		margin-top: rem-calc(50);
-	}
+  .social-media .button {
+    margin-right: rem-calc(0);
+    margin-top: rem-calc(50);
+  }
 }
+
 @media #{$large-up}{
-	.social-media .button {
-		margin-top: rem-calc(50);
-		&:first-child {
-			margin-top: rem-calc(50);
-		}
-	}
-
+  .social-media .button {
+    margin-top: rem-calc(50);
+    
+    &:first-child {
+      margin-top: rem-calc(50);
+    }
+  }
 }
 
-/* Section Four */
+// Section Four */
 .section-four {
-	margin-top: rem-calc(100);
-	margin-bottom: rem-calc(100);
-	width: auto;
-	h3,p {
-		color: $secondary-color;
-	}
-	h3 {
-		font-family: $font-tertiary;
-		font-size: rem-calc(18);
-		text-transform: uppercase;
-		margin-bottom: rem-calc(30);
-	}
-	p {
-		font-family: $font-primary;
-		font-size: rem-calc(30);
-		font-weight: $light;
-		margin-bottom: rem-calc(50);
-	}
-	.button {
-		font-family: $font-primary;
-	}
+  margin-bottom: rem-calc(100);
+  margin-top: rem-calc(100);
+  width: auto;
+  
+  h3,
+  p {
+    color: $secondary-color;
+  }
+	
+  h3 {
+    font-family: $font-tertiary;
+    font-size: rem-calc(18);
+    margin-bottom: rem-calc(30);
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: $font-primary;
+    font-size: rem-calc(30);
+    font-weight: $light;
+    margin-bottom: rem-calc(50);
+  }
+	
+  .button {
+    font-family: $font-primary;
+  }
 }
 
 .banner {
-	background-color: #F4F0eb;
-	color: $secondary-color;
-	p {
-		font-family: $font-primary;
-		font-size: rem-calc(34);
-		font-style: italic;
-		padding-top: rem-calc(20);
-		text-align: center;
-	}
+  background-color: #F4F0eb;
+  color: $secondary-color;
+  
+  p {
+    font-family: $font-primary;
+    font-size: rem-calc(34);
+    font-style: italic;
+    padding-top: rem-calc(20);
+    text-align: center;
+  }
 }
 
 @media #{$medium-up}{
-	.banner p {
-		text-align: left;
-	}
+  .banner p {
+    text-align: left;
+  }
 }
 
 @media #{$large-up}{
-	.section-four {
-		margin-right: rem-calc(150);
-		margin-left: rem-calc(150);
-	}
+  .section-four {
+    margin-left: rem-calc(150);
+    margin-right: rem-calc(150);
+  }
 }
 
-/* Footer */
+// Footer //
 .footer {
-	background-color: $primary-color;
-	color: $white;
-	padding-top: rem-calc(80);
-	padding-bottom: rem-calc(20);
-	img {
-		padding-bottom: rem-calc(50);
+  background-color: $primary-color;
+  color: $white;
+  padding-bottom: rem-calc(20);
+  padding-top: rem-calc(80);
+
+  img {
+    padding-bottom: rem-calc(50);
+  }
+  
+  a {
+    color: $white;
+    
+    &::hover {
+      color: $primary-color;
+    }
+  }
+
+  .footer-links {
+    margin-bottom: rem-calc(80);
+    text-align: center;
+  }
+	
+  .footer-copyright {
+    text-align: center;
+  }
+	
+  h3 {
+    font-family: Georgia, serif;
+    font-size: rem-calc(18);
+    font-style: italic;
+  }
+	
+  p {
+    font-family: $font-primary;
+    font-size: rem-calc(15);
+    
+    a:hover {
+      border-bottom: 1px solid $white;
+      padding-bottom: rem-calc(5);
+    }
 	}
-	a {
-		color: $white;
-		&::hover {
-			color: $primary-color;
-		}
-	}
-	.footer-links {
-		margin-bottom: rem-calc(80);
-		text-align: center;
-	}
-	.footer-copyright {
-		text-align: center;
-	}
-	h3 {
-		font-family: Georgia, serif;
-		font-size: rem-calc(18);
-		font-style: italic;
-	}
-	p {
-		font-family: $font-primary;
-		font-size: rem-calc(15);
-		a:hover {
-			border-bottom: 1px solid white;
-			padding-bottom: rem-calc(5);
-		}
-	}
-	.copyright {
-		margin-right: rem-calc(25);
-		font-family: $font-primary;
-		font-size: rem-calc(14);
-	}
-	.copyright-link {
-		font-family: $font-tertiary;
-		font-size: rem-calc(12);
-		margin-right: rem-calc(5);
-		margin-left: rem-calc(5);
-	}
+
+  .copyright {
+    font-family: $font-primary;
+    font-size: rem-calc(14);
+    margin-right: rem-calc(25);    
+  }
+
+  .copyright-link {
+    font-family: $font-tertiary;
+    font-size: rem-calc(12);
+    margin-left: rem-calc(5);
+    margin-right: rem-calc(5);
+  }
 }
 
 @media #{$large-up}{
-	.footer {
-		.footer-links, .footer-copyright {
-			text-align: left;
-		}
-	}
+  .footer {
+
+    .footer-links, 
+    .footer-copyright {
+      text-align: left;
+    }
+  }
 }
