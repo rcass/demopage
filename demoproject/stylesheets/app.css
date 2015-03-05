@@ -9221,128 +9221,151 @@ th.hide-for-touch {
 /* Banner Image */
 /* line 63, ../scss/_nav.scss */
 .fullimage {
-  background-image: url(../imgs/banner_placeholder.png);
+  background: linear-gradient(rgba(17, 0, 0, 0.3), rgba(17, 0, 0, 0.3)), url(../imgs/IMG_9985.jpg);
   height: 38.9375rem;
-  max-width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #F4F0eb;
 }
-/* line 67, ../scss/_nav.scss */
+/* line 77, ../scss/_nav.scss */
 .fullimage .fullimage-content {
   top: 8.625rem;
 }
-/* line 70, ../scss/_nav.scss */
+/* line 80, ../scss/_nav.scss */
 .fullimage h3, .fullimage p {
   color: #ffffff;
   font-family: "Lato", sans-serif;
 }
-/* line 74, ../scss/_nav.scss */
+/* line 84, ../scss/_nav.scss */
 .fullimage h3 {
   font-size: 2.75rem;
 }
-/* line 77, ../scss/_nav.scss */
+/* line 87, ../scss/_nav.scss */
 .fullimage p {
   font-size: 1.875rem;
 }
-/* line 80, ../scss/_nav.scss */
+/* line 90, ../scss/_nav.scss */
 .fullimage button {
   font-size: 1.0625rem;
 }
 
 /* Section One */
-/* line 86, ../scss/_nav.scss */
+/* line 96, ../scss/_nav.scss */
 .section-one-content p {
   color: #7F6F5A;
   font-size: 1.875rem;
   margin-bottom: 3.625rem;
 }
 
-/* line 91, ../scss/_nav.scss */
+/* line 101, ../scss/_nav.scss */
 .section-one {
   margin-top: 4.375rem;
   margin-bottom: 6.25rem;
 }
-/* line 94, ../scss/_nav.scss */
+/* line 104, ../scss/_nav.scss */
 .section-one img {
   margin-left: 1.5rem;
 }
-/* line 97, ../scss/_nav.scss */
+/* line 107, ../scss/_nav.scss */
 .section-one .large-3:last-child {
   float: left;
 }
 
 /* Section Two */
-/* line 103, ../scss/_nav.scss */
+/* line 113, ../scss/_nav.scss */
 .section-two-headline, .section-three-headline {
   color: #7F6F5A;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   margin-bottom: 4.625rem;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
+  z-index: 1;
+}
+/* line 122, ../scss/_nav.scss */
+.section-two-headline:before, .section-three-headline:before {
+  border-top: 1px solid #e0d5c5;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+/* line 131, ../scss/_nav.scss */
+.section-two-headline span, .section-three-headline span {
+  background: #ffffff;
+  padding: 0 15px;
 }
 
-/* line 112, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 .section-two-list hr {
   border-color: #e0d5c5;
 }
-/* line 115, ../scss/_nav.scss */
+/* line 140, ../scss/_nav.scss */
 .section-two-list .test {
   background-color: magenta;
   transition: background-color 300ms ease-out;
 }
-/* line 118, ../scss/_nav.scss */
+/* line 143, ../scss/_nav.scss */
 .section-two-list .test:hover {
   background-color: blue !important;
 }
-/* line 122, ../scss/_nav.scss */
+/* line 147, ../scss/_nav.scss */
 .section-two-list li {
   list-style-type: none;
 }
-/* line 124, ../scss/_nav.scss */
+/* line 149, ../scss/_nav.scss */
 .section-two-list li:hover {
   background-color: #F4F0eb;
 }
-/* line 127, ../scss/_nav.scss */
+/* line 152, ../scss/_nav.scss */
 .section-two-list li img {
   margin-left: 1.5rem;
   margin-bottom: 2.25rem;
 }
-/* line 131, ../scss/_nav.scss */
+/* line 156, ../scss/_nav.scss */
 .section-two-list li h5 {
   color: #304977;
   font-family: "Lato", sans-serif;
   font-size: 1.5625rem;
   padding-top: 0;
 }
-/* line 137, ../scss/_nav.scss */
+/* line 162, ../scss/_nav.scss */
 .section-two-list li p {
   color: #222222;
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
 }
-/* line 142, ../scss/_nav.scss */
+/* line 167, ../scss/_nav.scss */
 .section-two-list li .button {
   margin-top: 1.8125rem;
 }
 
-/* line 147, ../scss/_nav.scss */
+/* line 172, ../scss/_nav.scss */
 .li-text {
   margin-top: 1.5625rem;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 152, ../scss/_nav.scss */
+  /* line 177, ../scss/_nav.scss */
   .section-two-list {
     margin-left: 0;
   }
 }
 /* Section Three */
-/* line 169, ../scss/_nav.scss */
+/* line 194, ../scss/_nav.scss */
 .section-three-headline {
   margin-top: 3.75rem;
 }
 
 @media only screen {
-  /* line 174, ../scss/_nav.scss */
+  /* line 199, ../scss/_nav.scss */
   .section-three-box-one, .section-three-box-two, .section-three-box-three {
     color: #304977;
     font-family: "Lato", sans-serif;
@@ -9352,23 +9375,23 @@ th.hide-for-touch {
     border: solid 2px #ded2c1;
     height: 14.375rem;
   }
-  /* line 164, ../scss/_nav.scss */
+  /* line 189, ../scss/_nav.scss */
   .section-three-box-one:hover, .section-three-box-two:hover, .section-three-box-three:hover {
     color: white;
   }
-  /* line 178, ../scss/_nav.scss */
+  /* line 203, ../scss/_nav.scss */
   .section-three-box-one:hover, .section-three-box-two:hover, .section-three-box-three:hover {
     background-color: #426096;
   }
 
-  /* line 182, ../scss/_nav.scss */
+  /* line 207, ../scss/_nav.scss */
   .section-three-box-two {
     margin-left: 0.9375rem;
     max-width: 45.9%;
     float: right;
   }
 
-  /* line 188, ../scss/_nav.scss */
+  /* line 213, ../scss/_nav.scss */
   .section-three-box-three {
     height: 14.5rem;
     margin-top: 0.9375rem;
@@ -9376,94 +9399,94 @@ th.hide-for-touch {
     max-width: 100%;
   }
 }
-/* line 197, ../scss/_nav.scss */
+/* line 222, ../scss/_nav.scss */
 .section-three-image {
   opacity: 0.75;
   transition: opacity .55s ease-in-out;
   -moz-transition: opacity .55s ease-in-out;
   -webkit-transition: opacity .55s ease-in-out;
 }
-/* line 202, ../scss/_nav.scss */
+/* line 227, ../scss/_nav.scss */
 .section-three-image:hover {
   opacity: 1;
 }
-/* line 205, ../scss/_nav.scss */
+/* line 230, ../scss/_nav.scss */
 .section-three-image img {
   height: 29.875rem;
   width: 100%;
 }
 
-/* line 212, ../scss/_nav.scss */
+/* line 237, ../scss/_nav.scss */
 .social-media .button {
   margin-right: 1.5625rem;
 }
-/* line 215, ../scss/_nav.scss */
+/* line 240, ../scss/_nav.scss */
 .social-media .button:last-child {
   float: left;
 }
-/* line 219, ../scss/_nav.scss */
+/* line 244, ../scss/_nav.scss */
 .social-media .fa {
   padding-right: 0.625rem;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 224, ../scss/_nav.scss */
+  /* line 249, ../scss/_nav.scss */
   .social-media .button:first-child {
     margin-top: 1.5625rem;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 229, ../scss/_nav.scss */
+  /* line 254, ../scss/_nav.scss */
   .social-media .button {
     margin-right: 0;
     margin-top: 3.125rem;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 235, ../scss/_nav.scss */
+  /* line 260, ../scss/_nav.scss */
   .social-media .button {
     margin-top: 3.125rem;
   }
-  /* line 237, ../scss/_nav.scss */
+  /* line 262, ../scss/_nav.scss */
   .social-media .button:first-child {
     margin-top: 3.125rem;
   }
 }
 /* Section Four */
-/* line 245, ../scss/_nav.scss */
+/* line 270, ../scss/_nav.scss */
 .section-four {
   margin-top: 6.25rem;
   margin-bottom: 6.25rem;
   width: auto;
 }
-/* line 249, ../scss/_nav.scss */
+/* line 274, ../scss/_nav.scss */
 .section-four h3, .section-four p {
   color: #7F6F5A;
 }
-/* line 252, ../scss/_nav.scss */
+/* line 277, ../scss/_nav.scss */
 .section-four h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   text-transform: uppercase;
   margin-bottom: 1.875rem;
 }
-/* line 258, ../scss/_nav.scss */
+/* line 283, ../scss/_nav.scss */
 .section-four p {
   font-family: "Lato", sans-serif;
   font-size: 1.875rem;
   margin-bottom: 3.125rem;
 }
-/* line 263, ../scss/_nav.scss */
+/* line 288, ../scss/_nav.scss */
 .section-four .button {
   font-family: "Lato", sans-serif;
 }
 
-/* line 268, ../scss/_nav.scss */
+/* line 293, ../scss/_nav.scss */
 .banner {
   background-color: #F4F0eb;
   color: #7F6F5A;
 }
-/* line 271, ../scss/_nav.scss */
+/* line 296, ../scss/_nav.scss */
 .banner p {
   font-family: "Lato", sans-serif;
   font-size: 2.125rem;
@@ -9473,70 +9496,70 @@ th.hide-for-touch {
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 281, ../scss/_nav.scss */
+  /* line 306, ../scss/_nav.scss */
   .banner p {
     text-align: left;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 287, ../scss/_nav.scss */
+  /* line 312, ../scss/_nav.scss */
   .section-four {
     margin-right: 9.375rem;
     margin-left: 9.375rem;
   }
 }
 /* Footer */
-/* line 294, ../scss/_nav.scss */
+/* line 319, ../scss/_nav.scss */
 .footer {
   background-color: #426096;
   color: #ffffff;
   padding-top: 5rem;
   padding-bottom: 1.25rem;
 }
-/* line 299, ../scss/_nav.scss */
+/* line 324, ../scss/_nav.scss */
 .footer img {
   padding-bottom: 3.125rem;
 }
-/* line 302, ../scss/_nav.scss */
+/* line 327, ../scss/_nav.scss */
 .footer a {
   color: #ffffff;
 }
-/* line 304, ../scss/_nav.scss */
+/* line 329, ../scss/_nav.scss */
 .footer a::hover {
   color: #426096;
 }
-/* line 308, ../scss/_nav.scss */
+/* line 333, ../scss/_nav.scss */
 .footer .footer-links {
   margin-bottom: 5rem;
   text-align: center;
 }
-/* line 312, ../scss/_nav.scss */
+/* line 337, ../scss/_nav.scss */
 .footer .footer-copyright {
   text-align: center;
 }
-/* line 315, ../scss/_nav.scss */
+/* line 340, ../scss/_nav.scss */
 .footer h3 {
   font-family: Georgia, serif;
   font-size: 1.125rem;
   font-style: italic;
 }
-/* line 320, ../scss/_nav.scss */
+/* line 345, ../scss/_nav.scss */
 .footer p {
   font-family: "Lato", sans-serif;
   font-size: 0.9375rem;
 }
-/* line 323, ../scss/_nav.scss */
+/* line 348, ../scss/_nav.scss */
 .footer p a:hover {
   border-bottom: 1px solid white;
   padding-bottom: 0.3125rem;
 }
-/* line 328, ../scss/_nav.scss */
+/* line 353, ../scss/_nav.scss */
 .footer .copyright {
   margin-right: 1.5625rem;
   font-family: "Lato", sans-serif;
   font-size: 0.875rem;
 }
-/* line 333, ../scss/_nav.scss */
+/* line 358, ../scss/_nav.scss */
 .footer .copyright-link {
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
@@ -9545,7 +9568,7 @@ th.hide-for-touch {
 }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 343, ../scss/_nav.scss */
+  /* line 368, ../scss/_nav.scss */
   .footer .footer-links, .footer .footer-copyright {
     text-align: left;
   }

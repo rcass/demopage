@@ -61,9 +61,19 @@ $font-tertiary: 'Montserrat', sans-serif;
 
 /* Banner Image */
 .fullimage {
-	background-image: url(../imgs/banner_placeholder.png);
+	background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(17, 0, 0, 0.3), 
+      rgba(17, 0, 0, 0.3)
+    ),
+    /* bottom, image */
+    url(../imgs/IMG_9985.jpg);
 	height: rem-calc(623);
-	max-width: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: $tertiary-color;
 	.fullimage-content {
 		top: rem-calc(138);
 	}
@@ -105,8 +115,23 @@ $font-tertiary: 'Montserrat', sans-serif;
 	font-family: $font-tertiary;
 	font-size: rem-calc(18);
 	margin-bottom: rem-calc(74);
+	position: relative;
 	text-align: center;
 	text-transform: uppercase;
+  z-index: 1;
+  &:before {
+    border-top: 1px solid #e0d5c5;
+    content:"";
+    margin: 0 auto; 
+    position: absolute;
+    top: 40%; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+    }
+	span { 
+    background: $white; 
+    padding: 0 15px; 
+   }
 }
 .section-two-list {	
 	hr {
