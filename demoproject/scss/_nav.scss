@@ -165,14 +165,13 @@ $bold: 700;
 	hr {
 		border-color: #e0d5c5;
 	}
-	.test {
-		background-color: magenta;
-		transition: background-color 300ms ease-out;
-		&:hover {
-			background-color: blue !important;
-		}
-	}
 	li { 
+		a {
+		//	background-color: pink;
+			&:hover {
+			background-color: #F4F0eb;
+			}
+		}
 		list-style-type: none;
 		&:hover {
 			background-color: #F4F0eb;
@@ -200,7 +199,8 @@ $bold: 700;
 	}
 }
 .li-text  {
-	margin-top: rem-calc(25);
+	padding-top: rem-calc(25);
+	padding-top: rem-calc(15);
 }
 .fa-phone {
 	margin-right: rem-calc(10);
