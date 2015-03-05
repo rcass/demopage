@@ -1,6 +1,13 @@
 @import "settings";
 @import "foundation";
-@import "nav"; 
+@import "global";
+@import "layout/nav";
+@import "layout/banner";
+@import "layout/footer";
+@import "section/sectionone";
+@import "section/sectiontwo";
+@import "section/sectionthree";
+@import "section/sectionfour";
 
 // Or selectively include components
 // @import

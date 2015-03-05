@@ -1,0 +1,79 @@
+
+// Section Two //
+.section-two-headline {
+  color: $secondary-color;
+  font-family: $font-tertiary;
+  font-size: rem-calc(18);
+  margin-bottom: rem-calc(74);
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+
+  &:before {
+    border-top: 1px solid $border;
+    content: "";
+    margin: 0 auto; 
+    position: absolute;
+    top: 40%; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+  }
+
+  span { 
+    background: $white; 
+    padding: 0 15px; 
+   }
+}
+
+.section-two-list {	
+  hr {
+    border-color: $border;
+  }
+	
+  li { 
+    list-style-type: none;
+    
+    &:hover {
+      // background-color: $secondary-color;
+    }
+    
+    img {
+      margin-bottom: rem-calc(36);
+      margin-left: rem-calc(24);
+    }
+    
+    h5 {
+      color: $headingdark;
+      font-family: $font-primary;
+      font-size: rem-calc(30);
+      font-weight: $light;
+      padding-top: rem-calc(0);
+		}
+		
+    p {
+      color: $contentdark;
+      font-family: $font-primary;
+      font-size: rem-calc(24);
+    }
+		
+    .button {
+      font-size: rem-calc(16);
+      margin-top: rem-calc(29);
+		}
+	}
+}
+
+.li-text {
+  padding-top: rem-calc(15);
+}
+
+.fa-phone {
+  margin-right: rem-calc(10);
+}
+
+@media #{$small-only}{
+  .section-two-list {
+    margin-left: rem-calc(0);
+  }
+}

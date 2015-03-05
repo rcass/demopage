@@ -9157,64 +9157,64 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 18, ../scss/_nav.scss */
+/* line 23, ../scss/_global.scss */
 .prime, .second, .top-bar-section ul li > a.button {
   background-color: #426096;
   border: #426096 1px solid;
   color: #fff;
   font-family: "Lato", sans-serif;
 }
-/* line 24, ../scss/_nav.scss */
+/* line 29, ../scss/_global.scss */
 .prime:hover, .second:hover, .top-bar-section ul li > a.button:hover, .prime:active, .second:active, .top-bar-section ul li > a.button:active, .prime:focus, .second:focus, .top-bar-section ul li > a.button:focus {
   background-color: #21304b;
 }
 
-/* line 31, ../scss/_nav.scss */
+/* line 36, ../scss/_global.scss */
 .second {
   background-color: #7f6f5a;
   border: #7f6f5a 1px solid;
 }
-/* line 36, ../scss/_nav.scss */
+/* line 41, ../scss/_global.scss */
 .second:hover, .second:active, .second:focus {
   background-color: #3f372d;
 }
 
-/* line 43, ../scss/_nav.scss */
+/* line 48, ../scss/_global.scss */
 .third {
   background-color: #fff;
   border: #426096 1px solid;
   color: #426096;
 }
-/* line 48, ../scss/_nav.scss */
+/* line 53, ../scss/_global.scss */
 .third:hover, .third:active, .third:focus {
   background-color: #426096;
   color: #fff;
 }
 
-/* line 58, ../scss/_nav.scss */
+/* line 2, ../scss/layout/_nav.scss */
 .top-bar-section ul li > a.button {
   height: 3.125rem;
   padding-top: 0.75rem;
 }
 
-/* line 64, ../scss/_nav.scss */
+/* line 8, ../scss/layout/_nav.scss */
 .top-bar-section .has-form {
   padding: 0;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 69, ../scss/_nav.scss */
+  /* line 13, ../scss/layout/_nav.scss */
   .top-bar-section ul li > a.button {
     top: 1.125rem;
   }
 
-  /* line 73, ../scss/_nav.scss */
+  /* line 17, ../scss/layout/_nav.scss */
   .top-bar-section .has-form {
     padding-left: 1.625rem;
     padding-right: 1.625rem;
   }
 }
-/* line 81, ../scss/_nav.scss */
+/* line 2, ../scss/layout/_banner.scss */
 .fullimage {
   background: linear-gradient(rgba(17, 0, 0, 0.3), rgba(17, 0, 0, 0.3)), url("../imgs/IMG_9985.jpg");
   background-color: #f4f0eb;
@@ -9223,17 +9223,17 @@ th.hide-for-touch {
   background-size: cover;
   height: 38.9375rem;
 }
-/* line 94, ../scss/_nav.scss */
+/* line 15, ../scss/layout/_banner.scss */
 .fullimage .fullimage-content {
   top: 3.75rem;
 }
-/* line 98, ../scss/_nav.scss */
+/* line 19, ../scss/layout/_banner.scss */
 .fullimage h3,
 .fullimage p {
   color: #fff;
   font-family: "Lato", sans-serif;
 }
-/* line 104, ../scss/_nav.scss */
+/* line 25, ../scss/layout/_banner.scss */
 .fullimage h3 {
   font-size: 2.75rem;
   font-style: italic;
@@ -9241,36 +9241,101 @@ th.hide-for-touch {
   padding-bottom: 0.9375rem;
   padding-left: 1.25rem;
 }
-/* line 112, ../scss/_nav.scss */
+/* line 33, ../scss/layout/_banner.scss */
 .fullimage p {
   font-size: 1.875rem;
   font-weight: 300;
   line-height: 1.8;
   padding-bottom: 0.9375rem;
 }
-/* line 119, ../scss/_nav.scss */
+/* line 40, ../scss/layout/_banner.scss */
 .fullimage .button {
   font-family: "Lato", sans-serif;
   font-size: 1.0625rem;
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 126, ../scss/_nav.scss */
+  /* line 47, ../scss/layout/_banner.scss */
   .fullimage .fullimage-content {
     top: 6.25rem;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 132, ../scss/_nav.scss */
+  /* line 53, ../scss/layout/_banner.scss */
   .fullimage .fullimage-content {
     top: 8.625rem;
   }
-  /* line 135, ../scss/_nav.scss */
+  /* line 56, ../scss/layout/_banner.scss */
   .fullimage .fullimage-content h3 {
     padding-left: 3.125rem;
   }
 }
-/* line 142, ../scss/_nav.scss */
+/* line 2, ../scss/layout/_footer.scss */
+.footer {
+  background-color: #426096;
+  color: #fff;
+  padding-bottom: 1.25rem;
+  padding-top: 5rem;
+}
+/* line 8, ../scss/layout/_footer.scss */
+.footer img {
+  padding-bottom: 3.125rem;
+}
+/* line 12, ../scss/layout/_footer.scss */
+.footer a {
+  color: #fff;
+}
+/* line 15, ../scss/layout/_footer.scss */
+.footer a::hover {
+  color: #426096;
+}
+/* line 20, ../scss/layout/_footer.scss */
+.footer .footer-links {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+/* line 25, ../scss/layout/_footer.scss */
+.footer .footer-copyright {
+  text-align: center;
+}
+/* line 29, ../scss/layout/_footer.scss */
+.footer h3 {
+  font-family: Georgia, serif;
+  font-size: 1.125rem;
+  font-style: italic;
+}
+/* line 35, ../scss/layout/_footer.scss */
+.footer p {
+  font-family: "Lato", sans-serif;
+  font-size: 0.9375rem;
+}
+/* line 39, ../scss/layout/_footer.scss */
+.footer p a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.3125rem;
+}
+/* line 45, ../scss/layout/_footer.scss */
+.footer .copyright {
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem;
+  margin-right: 1.5625rem;
+}
+/* line 51, ../scss/layout/_footer.scss */
+.footer .copyright-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+}
+
+@media only screen and (min-width: 64.063em) {
+  /* line 62, ../scss/layout/_footer.scss */
+  .footer .footer-links,
+  .footer .footer-copyright {
+    text-align: left;
+  }
+}
+/* line 2, ../scss/section/_sectionone.scss */
 .section-one-content p {
   color: #7f6f5a;
   font-size: 1.875rem;
@@ -9279,21 +9344,21 @@ th.hide-for-touch {
   margin-bottom: 3.625rem;
 }
 
-/* line 150, ../scss/_nav.scss */
+/* line 10, ../scss/section/_sectionone.scss */
 .section-one {
   margin-bottom: 6.25rem;
   margin-top: 4.375rem;
 }
-/* line 154, ../scss/_nav.scss */
+/* line 14, ../scss/section/_sectionone.scss */
 .section-one img {
   margin-left: 1.5rem;
 }
-/* line 158, ../scss/_nav.scss */
+/* line 18, ../scss/section/_sectionone.scss */
 .section-one .large-3:last-child {
   float: left;
 }
 
-/* line 164, ../scss/_nav.scss */
+/* line 3, ../scss/section/_sectiontwo.scss */
 .section-two-headline, .section-three-headline {
   color: #7f6f5a;
   font-family: "Montserrat", sans-serif;
@@ -9304,7 +9369,7 @@ th.hide-for-touch {
   text-transform: uppercase;
   z-index: 1;
 }
-/* line 174, ../scss/_nav.scss */
+/* line 13, ../scss/section/_sectiontwo.scss */
 .section-two-headline:before, .section-three-headline:before {
   border-top: 1px solid #e0d5c5;
   content: "";
@@ -9317,34 +9382,26 @@ th.hide-for-touch {
   width: 95%;
   z-index: -1;
 }
-/* line 184, ../scss/_nav.scss */
+/* line 23, ../scss/section/_sectiontwo.scss */
 .section-two-headline span, .section-three-headline span {
   background: #fff;
   padding: 0 15px;
 }
 
-/* line 191, ../scss/_nav.scss */
+/* line 30, ../scss/section/_sectiontwo.scss */
 .section-two-list hr {
   border-color: #e0d5c5;
 }
-/* line 195, ../scss/_nav.scss */
+/* line 34, ../scss/section/_sectiontwo.scss */
 .section-two-list li {
   list-style-type: none;
 }
-/* line 196, ../scss/_nav.scss */
-.section-two-list li a:hover {
-  background-color: #f4f0eb;
-}
-/* line 202, ../scss/_nav.scss */
-.section-two-list li:hover {
-  background-color: #f4f0eb;
-}
-/* line 206, ../scss/_nav.scss */
+/* line 41, ../scss/section/_sectiontwo.scss */
 .section-two-list li img {
   margin-bottom: 2.25rem;
   margin-left: 1.5rem;
 }
-/* line 211, ../scss/_nav.scss */
+/* line 46, ../scss/section/_sectiontwo.scss */
 .section-two-list li h5 {
   color: #304977;
   font-family: "Lato", sans-serif;
@@ -9352,41 +9409,41 @@ th.hide-for-touch {
   font-weight: 300;
   padding-top: 0;
 }
-/* line 219, ../scss/_nav.scss */
+/* line 54, ../scss/section/_sectiontwo.scss */
 .section-two-list li p {
-  color: #222222;
+  color: #222;
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
 }
-/* line 225, ../scss/_nav.scss */
+/* line 60, ../scss/section/_sectiontwo.scss */
 .section-two-list li .button {
   font-size: 1rem;
   margin-top: 1.8125rem;
 }
 
-/* line 232, ../scss/_nav.scss */
+/* line 67, ../scss/section/_sectiontwo.scss */
 .li-text {
   padding-top: 0.9375rem;
 }
 
-/* line 236, ../scss/_nav.scss */
+/* line 71, ../scss/section/_sectiontwo.scss */
 .fa-phone {
   margin-right: 0.625rem;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 241, ../scss/_nav.scss */
+  /* line 76, ../scss/section/_sectiontwo.scss */
   .section-two-list {
     margin-left: 0;
   }
 }
-/* line 260, ../scss/_nav.scss */
+/* line 15, ../scss/section/_sectionthree.scss */
 .section-three-headline {
   margin-top: 3.75rem;
 }
 
 @media only screen {
-  /* line 266, ../scss/_nav.scss */
+  /* line 21, ../scss/section/_sectionthree.scss */
   .section-three-box-one, .section-three-box-two, .section-three-box-three {
     color: #304977;
     font-family: "Lato", sans-serif;
@@ -9397,23 +9454,23 @@ th.hide-for-touch {
     border: solid 2px #ded2c1;
     height: 14.375rem;
   }
-  /* line 255, ../scss/_nav.scss */
+  /* line 10, ../scss/section/_sectionthree.scss */
   .section-three-box-one:hover, .section-three-box-two:hover, .section-three-box-three:hover {
     color: #fff;
   }
-  /* line 271, ../scss/_nav.scss */
+  /* line 26, ../scss/section/_sectionthree.scss */
   .section-three-box-one:hover, .section-three-box-two:hover, .section-three-box-three:hover {
     background-color: #426096;
   }
 
-  /* line 276, ../scss/_nav.scss */
+  /* line 31, ../scss/section/_sectionthree.scss */
   .section-three-box-two {
     float: right;
     margin-left: 0.9375rem;
     max-width: 45.9%;
   }
 
-  /* line 283, ../scss/_nav.scss */
+  /* line 38, ../scss/section/_sectionthree.scss */
   .section-three-box-three {
     height: 14.5rem;
     margin-bottom: 0.9375rem;
@@ -9421,94 +9478,94 @@ th.hide-for-touch {
     max-width: 100%;
   }
 }
-/* line 292, ../scss/_nav.scss */
+/* line 47, ../scss/section/_sectionthree.scss */
 .section-three-image {
   opacity: .75;
   transition: opacity .55s ease-in-out;
 }
-/* line 298, ../scss/_nav.scss */
+/* line 53, ../scss/section/_sectionthree.scss */
 .section-three-image:hover {
   opacity: 1;
 }
-/* line 302, ../scss/_nav.scss */
+/* line 57, ../scss/section/_sectionthree.scss */
 .section-three-image img {
   height: 29.875rem;
   width: 100%;
 }
 
-/* line 309, ../scss/_nav.scss */
+/* line 64, ../scss/section/_sectionthree.scss */
 .social-media .button {
   font-size: 1rem;
   margin-right: 1.5625rem;
 }
-/* line 314, ../scss/_nav.scss */
+/* line 69, ../scss/section/_sectionthree.scss */
 .social-media .button:last-child {
   float: left;
 }
-/* line 319, ../scss/_nav.scss */
+/* line 74, ../scss/section/_sectionthree.scss */
 .social-media .fa {
   padding-right: 0.625rem;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 325, ../scss/_nav.scss */
+  /* line 80, ../scss/section/_sectionthree.scss */
   .social-media .button:first-child {
     margin-top: 1.5625rem;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 331, ../scss/_nav.scss */
+  /* line 86, ../scss/section/_sectionthree.scss */
   .social-media .button {
     margin-right: 0;
     margin-top: 3.125rem;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 338, ../scss/_nav.scss */
+  /* line 93, ../scss/section/_sectionthree.scss */
   .social-media .button {
     margin-top: 3.125rem;
   }
-  /* line 341, ../scss/_nav.scss */
+  /* line 96, ../scss/section/_sectionthree.scss */
   .social-media .button:first-child {
     margin-top: 3.125rem;
   }
 }
-/* line 348, ../scss/_nav.scss */
+/* line 2, ../scss/section/_sectionfour.scss */
 .section-four {
   margin-bottom: 6.25rem;
   margin-top: 6.25rem;
   width: auto;
 }
-/* line 353, ../scss/_nav.scss */
+/* line 7, ../scss/section/_sectionfour.scss */
 .section-four h3,
 .section-four p {
   color: #7f6f5a;
 }
-/* line 358, ../scss/_nav.scss */
+/* line 12, ../scss/section/_sectionfour.scss */
 .section-four h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   margin-bottom: 1.875rem;
   text-transform: uppercase;
 }
-/* line 365, ../scss/_nav.scss */
+/* line 19, ../scss/section/_sectionfour.scss */
 .section-four p {
   font-family: "Lato", sans-serif;
   font-size: 1.875rem;
   font-weight: 300;
   margin-bottom: 3.125rem;
 }
-/* line 372, ../scss/_nav.scss */
+/* line 26, ../scss/section/_sectionfour.scss */
 .section-four .button {
   font-family: "Lato", sans-serif;
 }
 
-/* line 377, ../scss/_nav.scss */
+/* line 31, ../scss/section/_sectionfour.scss */
 .banner {
-  background-color: #F4F0eb;
+  background-color: #f4f0eb;
   color: #7f6f5a;
 }
-/* line 381, ../scss/_nav.scss */
+/* line 35, ../scss/section/_sectionfour.scss */
 .banner p {
   font-family: "Lato", sans-serif;
   font-size: 2.125rem;
@@ -9518,80 +9575,15 @@ th.hide-for-touch {
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 391, ../scss/_nav.scss */
+  /* line 45, ../scss/section/_sectionfour.scss */
   .banner p {
     text-align: left;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 397, ../scss/_nav.scss */
+  /* line 51, ../scss/section/_sectionfour.scss */
   .section-four {
     margin-left: 9.375rem;
     margin-right: 9.375rem;
-  }
-}
-/* line 404, ../scss/_nav.scss */
-.footer {
-  background-color: #426096;
-  color: #fff;
-  padding-bottom: 1.25rem;
-  padding-top: 5rem;
-}
-/* line 410, ../scss/_nav.scss */
-.footer img {
-  padding-bottom: 3.125rem;
-}
-/* line 414, ../scss/_nav.scss */
-.footer a {
-  color: #fff;
-}
-/* line 417, ../scss/_nav.scss */
-.footer a::hover {
-  color: #426096;
-}
-/* line 422, ../scss/_nav.scss */
-.footer .footer-links {
-  margin-bottom: 5rem;
-  text-align: center;
-}
-/* line 427, ../scss/_nav.scss */
-.footer .footer-copyright {
-  text-align: center;
-}
-/* line 431, ../scss/_nav.scss */
-.footer h3 {
-  font-family: Georgia, serif;
-  font-size: 1.125rem;
-  font-style: italic;
-}
-/* line 437, ../scss/_nav.scss */
-.footer p {
-  font-family: "Lato", sans-serif;
-  font-size: 0.9375rem;
-}
-/* line 441, ../scss/_nav.scss */
-.footer p a:hover {
-  border-bottom: 1px solid #fff;
-  padding-bottom: 0.3125rem;
-}
-/* line 447, ../scss/_nav.scss */
-.footer .copyright {
-  font-family: "Lato", sans-serif;
-  font-size: 0.875rem;
-  margin-right: 1.5625rem;
-}
-/* line 453, ../scss/_nav.scss */
-.footer .copyright-link {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.75rem;
-  margin-left: 0.3125rem;
-  margin-right: 0.3125rem;
-}
-
-@media only screen and (min-width: 64.063em) {
-  /* line 464, ../scss/_nav.scss */
-  .footer .footer-links,
-  .footer .footer-copyright {
-    text-align: left;
   }
 }

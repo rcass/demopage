@@ -1,0 +1,60 @@
+// Banner Image //
+.fullimage {
+  background: 
+    linear-gradient(
+      rgba(17, 0, 0, .3),
+      rgba(17, 0, 0, .3)
+    ),
+    url('../imgs/IMG_9985.jpg');
+  background-color: $tertiary-color;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: rem-calc(623);
+  
+  .fullimage-content {
+    top: rem-calc(60);
+  }
+	
+  h3,
+  p {
+    color: $white;
+    font-family: $font-primary;
+  }
+
+  h3 {
+    font-size: rem-calc(44);
+    font-style: italic;
+    font-weight: $regular;
+    padding-bottom: rem-calc(15);
+    padding-left: rem-calc(20);
+  }
+
+  p {
+    font-size: rem-calc(30);
+    font-weight: $light;
+    line-height: 1.8;
+    padding-bottom: rem-calc(15);
+  }
+
+  .button {
+    font-family: $font-primary;
+    font-size: rem-calc(17);
+	}
+}
+
+@media #{$medium-only} {
+  .fullimage .fullimage-content {
+    top: rem-calc(100);
+  }
+}
+
+@media #{$large-up} {
+  .fullimage .fullimage-content {
+    top: rem-calc(138);
+    
+    h3 {
+      padding-left: rem-calc(50);
+    } 
+  }
+}

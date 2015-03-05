@@ -1,0 +1,100 @@
+// Section Three //
+@mixin sectionthreefonts {
+  color: $headingdark;
+  font-family: $font-primary;
+  font-size: rem-calc(26);
+  font-weight: $light;
+  line-height: 2;
+  padding-top: rem-calc(15);
+  
+  &:hover {
+    color: $white;
+  }
+}
+
+.section-three-headline {
+  @extend .section-two-headline;
+  margin-top: rem-calc(60);
+}
+
+@media #{$small-up} { 
+  .section-three-box-one {
+    @include sectionthreefonts;
+    border: solid 2px $borderlight;
+    height: rem-calc(230);
+   
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+
+  .section-three-box-two {
+    @extend .section-three-box-one;
+    float: right;
+    margin-left: rem-calc(15);
+    max-width: 45.9%;
+  }
+
+  .section-three-box-three {
+    @extend .section-three-box-one;
+    height: rem-calc(232);
+    margin-bottom: rem-calc(15);
+    margin-top: rem-calc(15);
+    max-width: 100%;
+  }
+}
+
+.section-three-image {
+  opacity: .75;
+  //-moz-transition: opacity .55s ease-in-out;
+  //-webkit-transition: opacity .55s ease-in-out;
+  transition: opacity .55s ease-in-out;
+  
+  &:hover {
+    opacity: 1;
+  }
+
+  img {
+    height: rem-calc(478);
+    width: 100%;
+  }
+}
+
+.social-media {
+  .button {
+    font-size: rem-calc(16);
+    margin-right: rem-calc(25);
+    //white-space: nowrap; Need to Work on this one
+    
+    &:last-child {
+      float: left;
+    }    
+  }
+
+  .fa {
+    padding-right: rem-calc(10);
+  }
+}
+
+@media #{$small-only}{
+  .social-media .button:first-child {
+    margin-top: rem-calc(25);
+  }
+}
+
+@media #{$medium-only}{
+  .social-media .button {
+    margin-right: rem-calc(0);
+    margin-top: rem-calc(50);
+  }
+}
+
+@media #{$large-up}{
+  .social-media .button {
+    margin-top: rem-calc(50);
+    
+    &:first-child {
+      margin-top: rem-calc(50);
+    }
+  }
+}

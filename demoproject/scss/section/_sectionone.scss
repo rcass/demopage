@@ -1,0 +1,22 @@
+// Section One //
+.section-one-content p {
+  color: $secondary-color;
+  font-size: rem-calc(30);
+  font-weight: $light;
+  line-height: 2;
+  margin-bottom: rem-calc(58);
+}
+
+.section-one {
+  margin-bottom: rem-calc(100);
+  margin-top: rem-calc(70);
+  
+  img {
+    margin-left: rem-calc(24);
+  }
+
+  .large-3:last-child {
+    float: left;
+  }
+}
+
